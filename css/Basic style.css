@@ -1,0 +1,1161 @@
+/*Basic style*/
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+    color:#0068FF;
+    display:block;
+    cursor:pointer;
+}
+ul{list-style:none;}
+img{vertical-align:top;}
+html {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior:smooth;
+}
+body{
+    font-family: 'NPSfontRegular';
+    color:#0068FF;
+    overflow-x:hidden;
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    position:relative;
+}
+
+
+
+/*모바일*/
+@media screen and (max-width:767px) {
+    #intro{
+        width:100vw;
+        height:100vh;
+        overflow:hidden;
+    }
+    #section1,
+    #section2,
+    #section3,
+    #section4,
+    #section5{
+        width:100%;
+        height:100%;
+        overflow:hidden;
+    }
+    /* #Content #section1,
+    #Layout #section1,
+    #Bookcover #section1{margin-bottom:28.5%;} */
+    .inner{
+        /* width:100%; */
+        width:89.333333%;
+        height:100%;
+        margin:0 auto;
+        position:relative;
+    }
+
+
+
+    /*Nav*/
+    #About_me .main_nav .home,
+    #About_me .main_nav .about_me,
+    #About_me .main_nav .content,
+    #About_me .main_nav .layout,
+    #About_me .main_nav .bookcover,
+    #Content .main_nav .home,
+    #Content .main_nav .about_me,
+    #Content .main_nav .content,
+    #Content .main_nav .layout,
+    #Content .main_nav .bookcover,
+    #Layout .main_nav .home,
+    #Layout .main_nav .about_me,
+    #Layout .main_nav .content,
+    #Layout .main_nav .layout,
+    #Layout .main_nav .bookcover,
+    #Bookcover .main_nav .home,
+    #Bookcover .main_nav .about_me,
+    #Bookcover .main_nav .content,
+    #Bookcover .main_nav .layout,
+    #Bookcover .main_nav .bookcover{display:none;}
+    .main_nav {
+        position: absolute;
+        z-index: 980000;
+    }
+    .main_nav .hamburger_menu{
+        position:fixed;
+        top:25px;
+        right:5.333333%;
+    }
+    .main_nav .hamburger_menu img{width:20px;}
+    #Home .main_nav>ul>li:hover a{
+        color:#0068FF;
+        text-shadow:
+        -1px 0 #fff, 
+        0 1px #fff, 
+        1px 0 #fff, 
+        0 -1px #fff;
+        /* color: transparent;
+        -webkit-text-stroke:0.8px #0068ff; */
+    }
+
+
+
+    /*parallax*/
+    .parallax{
+        position:fixed;
+        right:5.333333%;
+        width:10px;
+        z-index: 980000;
+    }
+    .parallax>ul{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+    .parallax>ul>li{height:10px;}
+    .parallax .circle{
+        display: inline-block;
+        width:10px;
+        height:10px;
+        /* background:#fff; */
+        border:1px solid rgb(0, 104, 255);
+        border-radius:50%;
+        box-sizing:border-box;
+    }
+    .parallax .circle.active{
+        background:#0068FF;
+        transition:all 0.3s ease;
+    }
+
+
+
+    /*toggle_menu*/
+    #toggle_menu{
+        width:100%;
+        height:100%;
+        background:#0068FF;
+        position:fixed;
+        top:0;
+        right:-1024px;
+        z-index:999999;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+    }
+    #toggle_menu>ul>li{margin-top:30px;}
+    #toggle_menu>ul>li:hover a{
+        color:#0068FF;
+        text-shadow:
+        -1px 0 #fff, 
+        0 1px #fff, 
+        1px 0 #fff, 
+        0 -1px #fff;
+        /* color: transparent;
+        -webkit-text-stroke:0.8px #0068ff; */
+    }
+    #toggle_menu>ul>li:first-child{margin-top:0;}
+    #toggle_menu>ul>li>a{
+        font-family: 'BagelFatOne-Regular';
+        font-size:30px;
+        color:#fff;
+    }
+    #toggle_menu .xbutton{
+        position:absolute;
+        top:0;
+        right:3%;
+    }
+    #toggle_menu .xbutton img{width:30px;}
+
+
+
+    /*h1~h4 정리*/
+    /*About_me 페이지*/
+    /*파란색 텍스트*/
+    h1{
+        font-size:26px;
+        font-family: 'BagelFatOne-Regular';
+        color:#0068FF
+    }
+
+    /*나머지 페이지*/
+    /*타이틀*/
+    h2{
+        width:120%;
+        font-size:20px;
+        line-height:30px;
+        font-family: 'NPSfontExtrabold';
+        font-weight:800;
+        margin:20px 0 5px;
+    }
+    /*번호*/
+    h3{
+        font-size:20px;
+        font-family: 'BagelFatOne-Regular';
+    }
+    /*디자인 텍스트*/
+    h4{
+        font-size:14px;
+        font-family: 'BagelFatOne-Regular';
+        letter-spacing:1px;
+        margin-bottom:20px;
+    }
+
+
+
+    /*section1*/
+    #section1 .inner{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+    }
+    /*main*/
+    .main{
+        position:absolute;
+        /* left:32%;
+        top:10%; */
+        z-index:1;
+    }
+    /*폴라로이드*/
+    .polaroid{width:285px;}
+    /*content-text*/
+    .layout-text{
+        width:304px;
+        /* min-width:40%; */
+        /* max-width:90.749%; */
+        position:absolute;
+        left:-4%;
+        top:17%;
+        z-index:2;
+    }
+    /*ul*/
+    ul.content>li:last-child{margin-bottom:0;}
+    /*pen*/
+    .pen{display:none;}
+
+    /*배경 반짝이*/
+    .star1{
+        position:absolute;
+        left:3%;
+        top:13%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star2{
+        position:absolute;
+        right:7%;
+        bottom:6%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star3{
+        position:absolute;
+        right:-2%;
+        bottom:17%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star1 img{width:67px;}
+    .star2 img{width:73px;}
+    .star3 img{width:53px;}
+    .star1.active,
+    .star2.active,
+    .star3.active,
+    .line_star.active{
+        opacity:1;
+        transition:1.0s 0.5s;
+        transform:scale(1);
+    }
+
+    /*배경 line*/
+    #section1 .line{display:none;}
+
+
+
+    /*content ~ bookcover 공통 style*/
+    .title-text-wrap .content-text,
+    .detail-text-wrap .detail-bold,
+    .detail-text-wrap .detail-regular{
+        font-family: 'Pretendard-Regular';
+        font-size:12px;
+        line-height:22px;
+    }
+    .title-text-wrap .content-text,
+    .detail-text-wrap .detail-regular{
+        font-weight:500;
+        color:#000;
+    }
+    /* .title-text-wrap .content-text{width:90%;} */
+    .detail-text-wrap .detail-bold{
+        font-weight:700;
+        width:42px;
+    }
+    .detail-text-wrap .detail-bold>p,
+    .detail-text-wrap .detail-regular>p{margin-bottom:5px;}
+    .detail-text-wrap .detail-bold>p:last-child,
+    .detail-text-wrap .detail-regular>p:last-child{margin-bottom:0;}
+    .title-text-wrap{grid-column:1/3;}
+    .detail-text-wrap{
+        grid-column:3/5;
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+    }
+    .detail-text{
+        display:flex;
+        flex-direction:row;
+        gap:10px;
+    }
+    .detail-text-wrap .color-wrap{display:block;}
+    .detail-text-wrap .color-circle1,
+    .detail-text-wrap .color-circle2{
+        display:inline-block;
+        width:12px;
+        height:12px;
+        border-radius:50%;
+        vertical-align:middle;
+        margin-right:5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*태블릿*/
+@media screen and (min-width:768px) and (max-width:1024px){
+    #intro{
+        width:100vw;
+        height:100vh;
+        overflow:hidden;
+    }
+    #section1,
+    #section2,
+    #section3,
+    #section4,
+    #section5{
+        width:100%;
+        height:100%;
+        overflow:hidden;
+    }
+    /* #Content #section1,
+    #Layout #section1,
+    #Bookcover #section1{margin-bottom:28.5%;} */
+    .inner{
+        /* width:100%; */
+        width:91.666666%;
+        height:100%;
+        margin:0 auto;
+        position:relative;
+    }
+
+
+
+    /*Nav*/
+    /*main_nav*/
+    #About_me .main_nav .home,
+    #About_me .main_nav .about_me,
+    #About_me .main_nav .content,
+    #About_me .main_nav .layout,
+    #About_me .main_nav .bookcover,
+    #Content .main_nav .home,
+    #Content .main_nav .about_me,
+    #Content .main_nav .content,
+    #Content .main_nav .layout,
+    #Content .main_nav .bookcover,
+    #Layout .main_nav .home,
+    #Layout .main_nav .about_me,
+    #Layout .main_nav .content,
+    #Layout .main_nav .layout,
+    #Layout .main_nav .bookcover,
+    #Bookcover .main_nav .home,
+    #Bookcover .main_nav .about_me,
+    #Bookcover .main_nav .content,
+    #Bookcover .main_nav .layout,
+    #Bookcover .main_nav .bookcover{display:none;}
+    .main_nav {
+        position: absolute;
+        z-index:980000;
+    }
+    .main_nav .hamburger_menu{
+        position:fixed;
+        top:45px;
+        right:4%;
+    }
+    #Home .main_nav>ul>li:hover a{
+        color:#0068FF;
+        text-shadow:
+        -1px 0 #fff, 
+        0 1px #fff, 
+        1px 0 #fff, 
+        0 -1px #fff;
+        /* color: transparent;
+        -webkit-text-stroke:0.8px #0068ff; */
+    }
+
+
+
+    /*parallax*/
+    .parallax{
+        position:fixed;
+        right:4.166666%;
+        width:10px;
+        z-index:980000;
+    }
+    .parallax>ul{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+    .parallax>ul>li{height:10px;}
+    .parallax .circle{
+        display: inline-block;
+        width:10px;
+        height:10px;
+        /* background:#fff; */
+        border:1px solid rgb(0, 104, 255);
+        border-radius:50%;
+        box-sizing:border-box;
+    }
+    .parallax .circle.active{
+        background:#0068FF;
+        transition:all 0.3s ease;
+    }
+
+
+
+    /*toggle_menu*/
+    #toggle_menu{
+        width:100%;
+        height:100%;
+        background:#0068FF;
+        position:fixed;
+        top:0;
+        right:-1024px;
+        z-index:999999;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+    }
+    #toggle_menu>ul>li{margin-top:30px;}
+    #toggle_menu>ul>li:hover a{
+        color:#0068FF;
+        text-shadow:
+        -1px 0 #fff, 
+        0 1px #fff, 
+        1px 0 #fff, 
+        0 -1px #fff;
+        /* color: transparent;
+        -webkit-text-stroke:0.8px #0068ff; */
+    }
+    #toggle_menu>ul>li:first-child{margin-top:0;}
+    #toggle_menu>ul>li>a{
+        font-family: 'BagelFatOne-Regular';
+        font-size:40px;
+        color:#fff;
+    }
+    #toggle_menu .xbutton{
+        position:absolute;
+        top:0;
+        right:3%;
+    }
+
+
+    
+    /*h1~h4 정리*/
+    /*About_me 페이지*/
+    /*파란색 텍스트*/
+    h1{
+        font-size:42px;
+        font-family: 'BagelFatOne-Regular';
+        color:#0068FF
+    }
+
+    /*나머지 페이지*/
+    /*타이틀*/
+    h2{
+        font-size:30px;
+        line-height:42px;
+        font-family: 'NPSfontExtrabold';
+        font-weight:800;
+        margin:30px 0 10px;
+    }
+    /*번호*/
+    h3{
+        font-size:28px;
+        font-family: 'BagelFatOne-Regular';
+    }
+    /*디자인 텍스트*/
+    h4{
+        font-size:20px;
+        font-family: 'BagelFatOne-Regular';
+        letter-spacing:1px;
+        margin-bottom:30px;
+    }
+
+
+
+    /*section1*/
+    #section1 .inner{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+    }
+    /*main*/
+    .main{
+        position:absolute;
+        /* left:32%;
+        top:10%; */
+        z-index:1;
+    }
+    /*폴라로이드*/
+    .polaroid{
+        /* width:460px; */
+        min-width:40%;
+        max-width:76.797%;
+        padding-left:13%;
+    }
+    /*layout-text*/
+    .layout-text{
+        /* width:555px; */
+        min-width:40%;
+        max-width:83.473%;
+        position:absolute;
+        left:10%;
+        top:15%;
+        z-index:2;
+    }
+    /*ul*/
+    ul.content>li:last-child{margin-bottom:0;}
+    /*pen*/
+    .pen{
+        /* width:45%; */
+        min-width:22%;
+        max-width:33%;
+        position:absolute;
+        left:77%;
+        top:32%;
+        z-index:5;
+        transform: rotate(-5.95deg);
+    }
+
+    /*배경 반짝이*/
+    .star1{
+        position:absolute;
+        left:5%;
+        top:11%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star2{
+        position:absolute;
+        right:8%;
+        bottom:7%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star3{
+        position:absolute;
+        right:2%;
+        bottom:20%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star1 img{width:96px;}
+    .star2 img{width:103px;}
+    .star3 img{width:72px;}
+    .star1.active,
+    .star2.active,
+    .star3.active,
+    .line_star.active{
+        opacity:1;
+        transition:1.0s 0.5s;
+        transform:scale(1);
+    }
+
+    /*배경 line*/
+    #section1 .line{display:none;}
+
+
+
+    /*content ~ bookcover 공통 style*/
+    .title-text-wrap .content-text,
+    .detail-text-wrap .detail-bold,
+    .detail-text-wrap .detail-regular{
+        font-family: 'Pretendard-Regular';
+        font-size:16px;
+        line-height:26px;
+    }
+    .title-text-wrap .content-text,
+    .detail-text-wrap .detail-regular{
+        font-weight:500;
+        color:#000;
+    }
+    .title-text-wrap .content-text{width:90%;}
+    .detail-text-wrap .detail-bold{
+        width:56px;
+        font-weight:700;
+    }
+    .detail-text-wrap .detail-bold>p,
+    .detail-text-wrap .detail-regular>p{margin-bottom:10px;}
+    .detail-text-wrap .detail-bold>p:last-child,
+    .detail-text-wrap .detail-regular>p:last-child{margin-bottom:0;}
+    .title-text-wrap{grid-column:2/6;}
+    .detail-text-wrap{
+        grid-column:6/9;
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+    .detail-text{
+        display:flex;
+        flex-direction:row;
+        gap:20px;
+    }
+    .detail-text-wrap .color-wrap{display:block;}
+    .detail-text-wrap .color-circle1,
+    .detail-text-wrap .color-circle2{
+        display:inline-block;
+        width:16px;
+        height:16px;
+        border-radius:50%;
+        vertical-align:middle;
+        margin-right:5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*노트북*/
+@media screen and (min-width:1025px) and (max-width:1536px){
+    #intro,
+    #section1,
+    #section2,
+    #section3,
+    #section4,
+    #section5{
+        width:100vw;
+        height:100vh;
+        overflow:hidden;
+    }
+    .inner{
+        /* width:100%; */
+        width:93.489583%;
+        height:100%;
+        margin:0 auto;
+        position:relative;
+    }
+    
+
+
+    /*Nav*/
+    .main_nav{
+        position:fixed;
+        right:3.255208%;
+        top:37%;
+        z-index:980000;
+    }
+    .main_nav>ul>li{
+        text-align:center;
+        margin-top:20px;
+    }
+    .main_nav>ul>li:first-child{margin-top:0;}
+    .main_nav>ul>li>a{
+        font-family: 'BagelFatOne-Regular';
+        font-size:20px;
+    }
+    .main_nav>ul>li:hover a{
+        color:#fff;
+        text-shadow:
+        -1px 0 #0068FF, 
+        0 1px #0068FF, 
+        1px 0 #0068FF, 
+        0 -1px #0068FF;
+        /* color: transparent;
+        -webkit-text-stroke:0.8px #0068ff; */
+    }
+    .main_nav .hamburger_menu{display:none;}
+
+
+
+    
+    /*parallax*/
+    .parallax{
+        position:fixed;
+        top:52px;
+        right:2.708333%;
+        /* width:40px; */
+        z-index:980000;
+    }
+    .parallax>ul{
+        width:100%;
+        display:flex;
+        flex-direction:row;
+        gap:10px;
+    }
+   
+    .parallax .circle{
+        display: inline-block;
+        width:10px;
+        height:10px;
+        /* background:#fff; */
+        border:1px solid rgb(0, 104, 255);
+        border-radius:50%;
+        box-sizing:border-box;
+    }
+    .parallax .circle.active{
+        background:#0068FF;
+        transition:all 0.3s ease;
+    }
+
+
+
+    /*toggle_menu*/
+    #toggle_menu{display:none;}
+
+
+    
+    /*h1~h4 정리*/
+    /*About_me 페이지*/
+    /*파란색 텍스트*/
+    h1{
+        font-size:50px;
+        font-size:3.125rem;
+        font-family: 'BagelFatOne-Regular';
+        color:#0068FF
+    }
+
+    /*나머지 페이지*/
+    /*타이틀*/
+    h2{
+        font-size:34px;
+        line-height:46px;
+        font-family: 'NPSfontExtrabold';
+        font-weight:800;
+        margin:40px 0 10px;
+    }
+    /*번호*/
+    h3{
+        font-size:32px;
+        font-family: 'BagelFatOne-Regular';
+    }
+    /*디자인 텍스트*/
+    h4{
+        font-size:24px;
+        font-family: 'BagelFatOne-Regular';
+        letter-spacing:1px;
+        margin-bottom:40px;
+    }
+
+
+
+    /*section1*/
+    #section1 .inner{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+    }
+    /*main*/
+    .main{
+        position:absolute;
+        /* left:32%;
+        top:10%; */
+        z-index:1;
+    }
+    /*폴라로이드*/
+    .polaroid{
+        /* width:490px; */
+        min-width:40%;
+        max-width:80%;
+    }
+    /*layout-text*/
+    .layout-text{
+        width:580px;
+        position:absolute;
+        left:-8%;
+        top:12%;
+        z-index:2;
+    }
+    /*ul*/
+    ul.content>li:last-child{margin-bottom:0;}
+    /*pen*/
+    .pen{
+        /* width:45%; */
+        min-width:27%;
+        max-width:35%;
+        position:absolute;
+        left:70%;
+        top:32.5%;
+        z-index:5;
+    }
+
+
+    /*배경 반짝이*/
+    .star1{
+        position:absolute;
+        left:12%;
+        top:10%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star2{
+        position:absolute;
+        right:20%;
+        bottom:15%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star3{
+        position:absolute;
+        right:17%;
+        bottom:30%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star1 img{width:96px;}
+    .star2 img{width:103px;}
+    .star3 img{width:72px;}
+    .star1.active,
+    .star2.active,
+    .star3.active,
+    .line_star.active{
+        opacity:1;
+        transition:1.0s 0.5s;
+        transform:scale(1);
+    }
+
+
+
+    /*배경 line*/
+    #section1 .line{display:none;}
+
+
+
+    /*content ~ bookcover 공통 style*/
+    #Content .all-text-wrap,
+    #Layout .all-text-wrap{margin-top:-31%;}
+    .title-text-wrap .content-text,
+    .detail-text-wrap .detail-bold,
+    .detail-text-wrap .detail-regular{
+        font-family: 'Pretendard-Regular';
+        font-size:18px;
+        line-height:30px;
+    }
+    .title-text-wrap .content-text,
+    .detail-text-wrap .detail-regular{
+        font-weight:500;
+        color:#000;
+    }
+    .detail-text-wrap .detail-bold{
+        width:63px;
+        font-weight:700;
+    }
+    .detail-text-wrap .detail-bold>p,
+    .detail-text-wrap .detail-regular>p{margin-bottom:10px;}
+    .detail-text-wrap .detail-bold>p:last-child,
+    .detail-text-wrap .detail-regular>p:last-child{margin-bottom:0;}
+    /* .title-text-wrap{margin-bottom:50px;} */
+    .detail-text-wrap{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+        margin-top:50px;
+    }
+    .detail-text{
+        display:flex;
+        flex-direction:row;
+        gap:20px;
+    }
+    .detail-text-wrap .color-circle1,
+    .detail-text-wrap .color-circle2{
+        display:inline-block;
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        vertical-align:middle;
+        margin-right:5px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*데스크탑*/
+@media screen and (min-width:1537px) and (max-width:1920px){
+    #intro,
+    #section1,
+    #section2,
+    #section3,
+    #section4,
+    #section5{
+        width:100vw;
+        height:100vh;
+        overflow:hidden;
+    }
+    .inner{
+        /* width:100%; */
+        width:94.583333%;
+        height:100%;
+        margin:0 auto;
+        position:relative;
+    }
+
+
+
+    /*Nav*/
+    .main_nav{
+        position:fixed;
+        right:2.708333%;
+        top:37%;
+        z-index:980000;
+    }
+    .main_nav>ul>li{
+        text-align:center;
+        margin-top:20px;
+    }
+    .main_nav>ul>li:first-child{margin-top:0;}
+    .main_nav>ul>li>a{
+        font-family: 'BagelFatOne-Regular';
+        font-size:20px;
+    }
+    .main_nav>ul>li:hover a{
+        color:#fff;
+        text-shadow:
+        -1px 0 #0068FF, 
+        0 1px #0068FF, 
+        1px 0 #0068FF, 
+        0 -1px #0068FF;
+        /* color: transparent;
+        -webkit-text-stroke:0.8px #0068ff; */
+    }
+    .main_nav .hamburger_menu{display:none;}
+
+    
+
+
+    /*parallax*/
+    .parallax{
+        position:fixed;
+        top:52px;
+        right:2.708333%;
+        /* width:40px; */
+        z-index:980000;
+    }
+    .parallax>ul{
+        width:100%;
+        display:flex;
+        flex-direction:row;
+        gap:10px;
+    }
+    .parallax .circle{
+        display: inline-block;
+        width:10px;
+        height:10px;
+        /* background:#fff; */
+        border:1px solid rgb(0, 104, 255);
+        border-radius:50%;
+        box-sizing:border-box;
+    }
+    .parallax .circle.active{
+        background:#0068FF;
+        transition:all 0.3s ease;
+    }
+
+
+
+    /*toggle_menu*/
+    #toggle_menu{display:none;}
+
+
+
+    /*h1~h4 정리*/
+    /*About_me 페이지*/
+    /*파란색 텍스트*/
+    h1{
+        font-size:56px;
+        font-family: 'BagelFatOne-Regular';
+        color:#0068FF
+    }
+
+    /*나머지 페이지*/
+    /*타이틀*/
+    h2{
+        font-size:42px;
+        line-height:54px;
+        font-family: 'NPSfontExtrabold';
+        font-weight:800;
+        margin:50px 0 10px;
+    }
+    /*번호*/
+    h3{
+        font-size:36px;
+        font-family: 'BagelFatOne-Regular';
+    }
+    /*디자인 텍스트*/
+    h4{
+        font-size:28px;
+        font-family: 'BagelFatOne-Regular';
+        letter-spacing:1px;
+        margin-bottom:50px;
+    }
+
+
+
+    /*section1*/
+    #section1 .inner{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+    }
+    /*main*/
+    /*폴라로이드*/
+    .main{
+        position:absolute;
+        /* left:32%;
+        top:10%; */
+        z-index:1;
+    }
+    /*bookcover-text*/
+    .bookcover-text{
+        position:absolute;
+        left:6%;
+        top:12%;
+        z-index:2;
+    }
+    /*ul*/
+    ul.content>li:last-child{margin-bottom:0;}
+    /*pen*/
+    .pen{
+        position:absolute;
+        left:88%;
+        top:28%;
+        z-index:5;
+    }
+
+    /*배경 반짝이*/
+    .star1{
+        position:absolute;
+        left:22%;
+        top:10%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star2{
+        position:absolute;
+        right:20%;
+        bottom:15%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star3{
+        position:absolute;
+        right:17%;
+        bottom:30%;
+        opacity:0;
+        transform:scale(0);
+    }
+    .star1.active,
+    .star2.active,
+    .star3.active,
+    .line_star.active{
+        opacity:1;
+        transition:1.0s 0.5s;
+        transform:scale(1);
+    }
+
+    /*배경 line*/
+    #line1{
+        stroke-dasharray:2080; 
+        stroke-dashoffset:2080; 
+        animation:line1  0.8s linear 0.8s forwards;
+    }
+    #line2{
+        stroke-dasharray:2045; 
+        stroke-dashoffset:2045; 
+        animation:line2 0.8s linear 0s forwards;
+    }
+
+    @keyframes line1 {
+        from {stroke-dashoffset:2080px;}
+        to {stroke-dashoffset:0px;}
+    }
+    @keyframes line2 {
+    from {stroke-dashoffset:2045px;}
+    to {stroke-dashoffset:0px;}
+    }
+
+
+
+    /*content ~ bookcover 공통 style*/
+    .title-text-wrap .content-text,
+    .detail-text-wrap .detail-bold,
+    .detail-text-wrap .detail-regular{
+        font-family: 'Pretendard-Regular';
+        font-size:18px;
+        line-height:30px;
+    }
+    .title-text-wrap .content-text,
+    .detail-text-wrap .detail-regular{
+        font-weight:500;
+        color:#000;
+    }
+    .title-text-wrap .content-text{width:79%;}
+    .detail-text-wrap .detail-bold{
+        width:63px;
+        font-weight:700;
+    }
+    .detail-text-wrap .detail-bold>p,
+    .detail-text-wrap .detail-regular>p{margin-bottom:10px;}
+    .detail-text-wrap .detail-bold>p:last-child,
+    .detail-text-wrap .detail-regular>p:last-child{margin-bottom:0;}
+    .detail-text-wrap{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+        margin-top:50px;
+    }
+    .detail-text{
+        display:flex;
+        flex-direction:row;
+        gap:20px;
+    }
+    .detail-text-wrap .color-circle1,
+    .detail-text-wrap .color-circle2{
+        display:inline-block;
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        vertical-align:middle;
+        margin-right:5px;
+    }
+    .detail-text-wrap .color-number{margin-right:10px;}
+}
