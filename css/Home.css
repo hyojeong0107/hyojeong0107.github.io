@@ -1,0 +1,563 @@
+/*Font, Basic stlye style*/
+@import url(./Font.css);
+@import url(./Basic\ style.css);
+
+
+
+/*모바일*/
+@media screen and (max-width:767px) {
+    .inner{
+        display:flex;
+        justify-content:center;
+        align-items:end;
+    }
+
+
+
+    /*Nav*/
+    #Home .main_nav{
+        position:absolute;
+        left:44%;
+        top:5.5%;
+        text-align:center;
+        z-index:5;
+    }
+    #Home .main_nav>ul{
+        display:flex;
+        flex-direction:column;
+        gap:3px;
+        justify-content:center;
+    }
+    #Home .main_nav>ul>li>a{
+        font-size:16px;
+        font-family: 'BagelFatOne-Regular';
+        color:#fff;
+    }
+    #Home .main_nav>ul>li.home>a{
+        color:#0068FF;
+        text-shadow:
+        -1px 0 #fff, 
+        0 1px #fff, 
+        1px 0 #fff, 
+        0 -1px #fff;
+        /* color: transparent;
+        -webkit-text-stroke:0.8px #0068ff; */
+    }
+
+
+
+    /*센터*/
+    .main{
+        position:absolute;
+        /* left:31%;
+        bottom:0; */
+    }
+    .camera{
+        width:400px;
+        /* height:100%; */
+        position:relative;
+        left:0;
+        bottom:0;
+        z-index:1;
+    }
+    .title{
+        width:328px;
+        position:absolute;
+        left:10.5%;
+        top:-47%;
+        z-index:2;
+    }
+    .name{
+        position:absolute;
+        top:-29%;
+        left:34%;
+        z-index:2;
+        color:#0068FF;
+        font-size:18px;
+        font-family: 'BagelFatOne-Regular';
+    }
+
+
+
+    /*배경 반짝이*/
+    #Home .star1{
+        position:absolute;
+        left:2%;
+        top:6%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .star2{
+        position:absolute;
+        right:3%;
+        top:32%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .line_star{
+        position:absolute;
+        right:-4%;
+        top:26%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .star1 img,
+    #Home .star2 img{
+        width:51px !important;
+        height:56.23px;
+    }
+    #Home .line_star img{width:40px;}
+    #Home .star1.active,
+    #Home .star2.active,
+    #Home .line_star.active{
+        opacity:1;
+        transition:1.0s 0.5s;
+        transform:scale(1);
+    }
+    #Home .star2.active{height:56.23px;}
+
+
+
+    /*배경 line*/
+    #Home .line{
+        position:absolute;
+        top:-2%;
+        left:-130%;
+        /* margin-top:15%; */
+        z-index:-5;
+    }
+    #home-line1{
+        stroke-dasharray:2080; 
+        stroke-dashoffset:2080; 
+        animation:line1  0.8s linear 0.3s forwards;
+    }
+    #home-line2{
+        stroke-dasharray:2034; 
+        stroke-dashoffset:2034; 
+        animation:line2 0.8s linear 0s forwards;
+    }
+
+    @keyframes line1 {
+        from {stroke-dashoffset:2080px;}
+        to {stroke-dashoffset:0px;}
+    }
+    @keyframes line2 {
+    from {stroke-dashoffset:2034px;}
+    to {stroke-dashoffset:0px;}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*태블릿*/
+@media screen and (min-width:768px) and (max-width:1024px){
+    .inner{
+        display:flex;
+        justify-content:center;
+        align-items:end;
+    }
+
+
+
+    /*Nav*/
+    #Home .main_nav{
+        position:absolute;
+        left:46.5%;
+        top:5%;
+        text-align:center;
+        z-index:5;
+    }
+    #Home .main_nav>ul{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+        justify-content:center;
+    }
+    #Home .main_nav>ul>li>a{
+        font-size:18px;
+        font-family: 'BagelFatOne-Regular';
+        color:#fff;
+    }
+    #Home .main_nav>ul>li.home>a{
+        color:#0068FF;
+        text-shadow:
+        -1px 0 #fff, 
+        0 1px #fff, 
+        1px 0 #fff, 
+        0 -1px #fff;
+        /* color: transparent;
+        -webkit-text-stroke:0.8px #0068ff; */
+    }
+
+
+
+    /*센터*/
+    .main{
+        position:absolute;
+        /* left:31%;
+        bottom:0; */
+    }
+    .camera{
+        width:570px;
+        /* height:100%; */
+        position:relative;
+        left:0;
+        bottom:0;
+        z-index:1;
+    }
+    .title{
+        width:492px;
+        position:absolute;
+        left:9%;
+        top:-40%;
+        z-index:2;
+    }
+    .name{
+        position:absolute;
+        top:-21%;
+        left:37%;
+        z-index:2;
+        color:#0068FF;
+        font-size:22px;
+        font-family: 'BagelFatOne-Regular';
+    }
+
+
+
+    /*배경 반짝이*/
+    #Home .star1{
+        position:absolute;
+        left:6%;
+        top:20%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .star2{
+        position:absolute;
+        right:5%;
+        bottom:12%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .line_star{
+        position:absolute;
+        right:1%;
+        bottom:24%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .star1 img,
+    #Home .star2 img{width:81px;}
+    #Home .line_star img{width:64px;}
+    #Home .star1.active,
+    #Home .star2.active,
+    #Home .line_star.active{
+        opacity:1;
+        transition:1.0s 0.5s;
+        transform:scale(1);
+    }
+
+
+
+    /*배경 line*/
+    #Home .line{
+        position:absolute;
+        top:9%;
+        left:-73%;
+        /* margin-top:15%; */
+        z-index:-5;
+    }
+    #home-line1{
+        stroke-dasharray:2080; 
+        stroke-dashoffset:2080; 
+        animation:line1  0.8s linear 0.3s forwards;
+    }
+    #home-line2{
+        stroke-dasharray:2034; 
+        stroke-dashoffset:2034; 
+        animation:line2 0.8s linear 0s forwards;
+    }
+
+    @keyframes line1 {
+        from {stroke-dashoffset:2080px;}
+        to {stroke-dashoffset:0px;}
+    }
+    @keyframes line2 {
+    from {stroke-dashoffset:2034px;}
+    to {stroke-dashoffset:0px;}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*노트북*/
+@media screen and (min-width:1025px) and (max-width:1536px){
+    .inner{
+        display:flex;
+        justify-content:center;
+        align-items:end;
+    }
+
+
+
+    /*Nav*/
+    .main_nav>ul>li.home>a{
+        color:#fff;
+        text-shadow:
+        -1px 0 #0068FF, 
+        0 1px #0068FF, 
+        1px 0 #0068FF, 
+        0 -1px #0068FF;
+        /* color: transparent;
+        -webkit-text-stroke:0.8px #0068ff; */
+    }
+
+
+
+    /*센터*/
+    .main{
+        position:absolute;
+        left:31%;
+        bottom:0;
+    }
+    .camera{
+        min-width:60%;
+        max-width:80%;
+        /* width:580px; */
+        /* height:100%; */
+        position:relative;
+        left:0;
+        bottom:0;
+        z-index:1;
+    }
+    .title{
+        min-width:60%;
+        max-width:80%;
+        /* width:656px; */
+        position:absolute;
+        left:2%;
+        top:2%;
+        z-index:2;
+    }
+    .name{
+        position:absolute;
+        top:24%;
+        left:32%;
+        z-index:2;
+        color:#fff;
+        font-size:22px;
+        font-family: 'BagelFatOne-Regular';
+    }
+
+
+
+    /*배경 반짝이*/
+    #Home .star1{
+        position:absolute;
+        left:24%;
+        top:40%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .star2{
+        position:absolute;
+        right: 9%;
+        bottom:12%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .line_star{
+        position:absolute;
+        right:6%;
+        bottom:24%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .star1 img,
+    #Home .star2 img{
+        /* width:91px; */
+        min-width:60%;
+        max-width:85%;
+    }
+    #Home .line_star img{
+        /* width:72px; */
+        min-width:60%;
+        max-width:85%;
+    }
+    #Home .star1.active,
+    #Home .star2.active,
+    #Home .line_star.active{
+        opacity:1;
+        transition:1.0s 0.5s;
+        transform:scale(1);
+    }
+
+
+
+    /*배경 line*/
+    #Home .line{
+        position:absolute;
+        top:26%;
+        /* margin-top:15%; */
+        z-index:-5;
+    }
+    #home-line1{
+        stroke-dasharray:2080; 
+        stroke-dashoffset:2080; 
+        animation:line1  0.8s linear 0.3s forwards;
+    }
+    #home-line2{
+        stroke-dasharray:2034; 
+        stroke-dashoffset:2034; 
+        animation:line2 0.8s linear 0s forwards;
+    }
+
+    @keyframes line1 {
+        from {stroke-dashoffset:2080px;}
+        to {stroke-dashoffset:0px;}
+    }
+    @keyframes line2 {
+    from {stroke-dashoffset:2034px;}
+    to {stroke-dashoffset:0px;}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*데스크탑*/
+@media screen and (min-width:1537px) and (max-width:1920px){
+    .inner{
+        display:flex;
+        justify-content:center;
+        align-items:end;
+    }
+
+
+
+    /*Nav*/
+    .main_nav>ul>li.home>a{
+        color:#fff;
+        text-shadow:
+        -1px 0 #0068FF, 
+        0 1px #0068FF, 
+        1px 0 #0068FF, 
+        0 -1px #0068FF;
+        /* color: transparent;
+        -webkit-text-stroke:0.8px #0068ff; */
+    }
+
+
+
+    /*센터*/
+    .main{
+        position:absolute;
+        left:29%;
+        bottom:0;
+    }
+    .camera{
+        width:725px;
+        /* height:100%; */
+        position:relative;
+        left:0;
+        bottom:0;
+        z-index:1;
+    }
+    .title{
+        width:820px;
+        position:absolute;
+        left:2%;
+        top:4%;
+        z-index:2;
+    }
+    .name{
+        position:absolute;
+        top:27%;
+        left:42%;
+        z-index:2;
+        color:#fff;
+        font-size:22px;
+        font-family: 'BagelFatOne-Regular';
+    }
+
+
+
+    /*배경 반짝이*/
+    #Home .star1{
+        position:absolute;
+        left:23%;
+        top:35%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .star2{
+        position:absolute;
+        right:18%;
+        bottom:15%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .line_star{
+        position:absolute;
+        right:14%;
+        bottom:25%;
+        opacity:0;
+        transform:scale(0);
+    }
+    #Home .star1.active,
+    #Home .star2.active,
+    #Home .line_star.active{
+        opacity:1;
+        transition:1.0s 0.5s;
+        transform:scale(1);
+    }
+
+
+
+    /*배경 line*/
+    #Home .line{
+        position:absolute;
+        top:24%;
+        /* margin-top:15%; */
+        z-index:-5;
+    }
+    #home-line1{
+        stroke-dasharray:2080; 
+        stroke-dashoffset:2080; 
+        animation:line1  0.8s linear 0.3s forwards;
+    }
+    #home-line2{
+        stroke-dasharray:2034; 
+        stroke-dashoffset:2034; 
+        animation:line2 0.8s linear 0s forwards;
+    }
+
+    @keyframes line1 {
+        from {stroke-dashoffset:2080px;}
+        to {stroke-dashoffset:0px;}
+    }
+    @keyframes line2 {
+    from {stroke-dashoffset:2034px;}
+    to {stroke-dashoffset:0px;}
+    }
+}

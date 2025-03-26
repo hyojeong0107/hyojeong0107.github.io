@@ -1,0 +1,33 @@
+/*영문서체 - 베이글펫(Bagel Fat One)*/
+@font-face {
+    font-family: 'BagelFatOne-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*포인트 한글서체 - 국민연금체*/
+@font-face {
+    font-family: 'NPSfontRegular';
+    src: url('../font/NPSfont_regular.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NPSfontExtrabold';
+    src: url('../font/NPSfont_extrabold.ttf') format('woff2');
+    font-weight: 800;
+    font-style: bold;
+}
+  
+
+
+/*설명 한글서체 - 프리텐다드(Binggrae)*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
